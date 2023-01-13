@@ -28,7 +28,7 @@ footer {
   .n-menu-contenido-brand {
     text-decoration: none; }
     .n-menu-contenido-brand-logo {
-      width: 30%; }
+      width: 20%; }
     .n-menu-contenido-brand-text {
       color: #fff;
       font-weight: bold;
@@ -182,3 +182,126 @@ footer {
       width: 80%; }
     .sectionInformation .containerInformation__info .img2 {
       width: 40%; } }
+
+.sectionContact {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .sectionContact .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0; }
+    .sectionContact .container .row {
+      width: 65%;
+      display: flex;
+      align-items: center; }
+      .sectionContact .container .row .infoForm {
+        padding: 30px 20px;
+        background: #fff;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); }
+        .sectionContact .container .row .infoForm .contactForm {
+          position: relative;
+          padding: 0 20px;
+          width: 100%; }
+          .sectionContact .container .row .infoForm .contactForm h2 {
+            color: #2D033B;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center; }
+          .sectionContact .container .row .infoForm .contactForm .inputBox {
+            padding-top: 20px; }
+            .sectionContact .container .row .infoForm .contactForm .inputBox.w50 {
+              display: flex;
+              justify-content: space-between;
+              flex-wrap: wrap;
+              padding-top: 30px; }
+            .sectionContact .container .row .infoForm .contactForm .inputBox.w100 {
+              display: flex;
+              width: 100%;
+              padding: 20px 0;
+              justify-content: space-between; }
+            .sectionContact .container .row .infoForm .contactForm .inputBox input, .sectionContact .container .row .infoForm .contactForm .inputBox textarea {
+              width: 100% !important;
+              padding: 5px 0;
+              resize: none;
+              font-size: 18px;
+              color: #4c105c;
+              border: none;
+              border-bottom: 1px solid #2D033B;
+              outline: none !important; }
+            .sectionContact .container .row .infoForm .contactForm .inputBox textarea {
+              min-height: 100px; }
+            .sectionContact .container .row .infoForm .contactForm .inputBox span {
+              position: absolute;
+              padding: 5px 0;
+              font-size: 18px;
+              font-weight: bold;
+              color: #4c105c;
+              transition: 0.5s;
+              pointer-events: none; }
+            .sectionContact .container .row .infoForm .contactForm .inputBox input:focus ~ span,
+            .sectionContact .container .row .infoForm .contactForm .inputBox textarea:focus ~ span,
+            .sectionContact .container .row .infoForm .contactForm .inputBox input:valid ~ span,
+            .sectionContact .container .row .infoForm .contactForm .inputBox textarea:valid ~ span {
+              transform: translateY(-20px);
+              font-size: 12px;
+              font-weight: bold;
+              letter-spacing: 1px;
+              color: #ff568c; }
+            .sectionContact .container .row .infoForm .contactForm .inputBox input[type="submit"],
+            .sectionContact .container .row .infoForm .contactForm .inputBox input[type="reset"] {
+              position: relative;
+              background: #7f1d7f;
+              color: #fff;
+              border: none;
+              max-width: 48%;
+              padding: 10px;
+              border-radius: 3px; }
+      .sectionContact .container .row .infoContact {
+        background: #7f1d7f;
+        padding: 40px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); }
+        .sectionContact .container .row .infoContact h2 {
+          color: #fff;
+          font-size: 24px;
+          font-weight: bold;
+          margin: 0; }
+        .sectionContact .container .row .infoContact .info {
+          margin: 0;
+          padding: 0; }
+          .sectionContact .container .row .infoContact .info li {
+            display: flex;
+            margin: 20px 0;
+            cursor: pointer;
+            align-items: center; }
+            .sectionContact .container .row .infoContact .info li span {
+              font-size: 18px; }
+              .sectionContact .container .row .infoContact .info li span i {
+                font-size: 30px; }
+            .sectionContact .container .row .infoContact .info li span:nth-child(1) i {
+              filter: invert(1); }
+            .sectionContact .container .row .infoContact .info li span:nth-child(2) {
+              color: #fff;
+              margin-left: 10px; }
+        .sectionContact .container .row .infoContact .sci {
+          display: flex;
+          justify-content: center;
+          margin: 0;
+          padding: 0; }
+          .sectionContact .container .row .infoContact .sci li {
+            margin: 15px; }
+            .sectionContact .container .row .infoContact .sci li a {
+              text-decoration: none; }
+              .sectionContact .container .row .infoContact .sci li a i {
+                color: #fff;
+                opacity: 0.5; }
+          .sectionContact .container .row .infoContact .sci li:hover a i {
+            opacity: 1; }
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 90px; } }
