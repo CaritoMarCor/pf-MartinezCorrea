@@ -48,80 +48,34 @@
                             <a class="nav-link" href="./../pages/contacto.html"><i class="bi bi-person-vcard-fill"></i> Contacto</a>
                         </li>
                         <li class="nav-item n-collapse-ul-li">
-                            <a class="nav-link" href="./cart.html"><i class="bi bi-bag-heart-fill"></i> Carrito</a>
+                            <a class="nav-link" href=""><i class="bi bi-bag-heart-fill"></i> Carrito</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <!-- Contenido Principal -->
     <main>
-        <section class="sectionContact">
+        <section class="sectionCart">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-7 infoForm">
-                        <form class="contactForm" action="">
-                            <h2>¡Envíanos un Mensaje!</h2>
-                            <div class="inputBox">
-                                <div class="inputBox w50">
-                                    <input type="text" required />
-                                    <span>Nombre</span>
-                                </div>
-                                <div class="inputBox w50">
-                                    <input type="text" required />
-                                    <span>Apellidos</span>
-                                </div>
-                                <div class="inputBox w50">
-                                    <input type="email" required />
-                                    <span>Correo electrónico</span>
-                                </div>
-                                <div class="inputBox w50">
-                                    <input type="tel" required />
-                                    <span>Teléfono o Celular</span>
-                                </div>
-                                <div class="inputBox w100">
-                                    <textarea name="" required></textarea>
-                                    <span>Escribe tu mensaje aquí...</span>
-                                </div>
-                                <div class="inputBox w100">
-                                    <input type="submit" value="Enviar" />
-                                    <input type="reset" value="Limpiar" />
-                                </div>
-                            </div>
-                        </form>
+                <div id="root"></div>
+                <div class="sidebar">
+                    <div class="head">
+                        <p>Mi Carrito</p>
+                        <div class="cart">
+                            <i class="bi bi-bag-heart-fill"></i>
+                            <p id="count">0</p>
+                        </div>
                     </div>
-                    <div class="col-md-5 infoContact">
-                        <h2>Contacto</h2>
-                        <ul class="info">
-                            <li>
-                                <span><i class="bi bi-pin-map-fill"></i></span>
-                                <span>356 Padre Mariano <br>
-                                    Providencia, Stgo. <br>
-                                    7500026</span>
-                            </li>
-                            <li>
-                                <span><i class="bi bi-envelope-heart-fill"></i></span>
-                                <span>contacto@pinksetup.cl</span>
-                            </li>
-                            <li>
-                                <span><i class="bi bi-telephone-fill"></i></span>
-                                <span>+56 2 2656 7043</span>
-                            </li>
-                        </ul>
-                        <ul class="sci">
-                            <li><a href="#"><h3><i class="bi bi-facebook"></i></h3></a></li>
-                            <li><a href="#"><h3><i class="bi bi-twitter"></i></h3></a></li>
-                            <li><a href="#"><h3><i class="bi bi-instagram"></i></h3></a></li>
-                            <li><a href="#"><h3><i class="bi bi-pinterest"></i></h3></a></li>
-                            <li><a href="#"><h3><i class="bi bi-linkedin"></i></h3></a></li>
-                        </ul>
+                    <div id="cartItem">Tu carrito está vacío</div>
+                    <div class="foot">
+                        <h3>Total</h3>
+                        <h2 id="total">$ 0</h2>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <!-- Footer -->
     <footer>
         <div class="container-fluid">
             <div class="row p-1 n-footer">
@@ -169,5 +123,7 @@
 <!-- Script Animación -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script> AOS.init();</script>
+<!-- Script para hacer funcional el carrito -->
+<script src="./../resources/js/cart.js"></script>
 </body>
 </html>

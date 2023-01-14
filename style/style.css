@@ -28,7 +28,7 @@ footer {
   .n-menu-contenido-brand {
     text-decoration: none; }
     .n-menu-contenido-brand-logo {
-      width: 20%; }
+      width: 25%; }
     .n-menu-contenido-brand-text {
       color: #fff;
       font-weight: bold;
@@ -39,9 +39,9 @@ footer {
       padding: 0 50px; }
       .n-menu-contenido .n-collapse-ul-li a {
         color: #fff;
-        font-size: 17px; }
+        font-size: 20px; }
       .n-menu-contenido .n-collapse-ul-li a a.active, .n-menu-contenido .n-collapse-ul-li a:hover {
-        background: #f9d8fb;
+        background: #fdf7fd;
         border-radius: 3px;
         transition: all 0.5s ease;
         color: #2D033B; }
@@ -80,7 +80,7 @@ footer {
         color: #fff;
         padding: 8px; }
       .container-fluid .n-footer-tree a a.active, .container-fluid .n-footer-tree a:hover {
-        background: #f9d8fb;
+        background: #fdf7fd;
         border-radius: 3px;
         transition: all 0.5s ease;
         color: #2D033B; }
@@ -199,7 +199,7 @@ footer {
       .sectionContact .container .row .infoForm {
         padding: 30px 20px;
         background: #fff;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); }
+        box-shadow: 0 10px 10px #2d033b80; }
         .sectionContact .container .row .infoForm .contactForm {
           position: relative;
           padding: 0 20px;
@@ -258,10 +258,13 @@ footer {
               max-width: 48%;
               padding: 10px;
               border-radius: 3px; }
+            .sectionContact .container .row .infoForm .contactForm .inputBox input[type="submit"]:hover,
+            .sectionContact .container .row .infoForm .contactForm .inputBox input[type="reset"]:hover {
+              background: #ff568c; }
       .sectionContact .container .row .infoContact {
         background: #7f1d7f;
         padding: 40px;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); }
+        box-shadow: 0 10px 10px #2d033b80; }
         .sectionContact .container .row .infoContact h2 {
           color: #fff;
           font-size: 24px;
@@ -302,6 +305,248 @@ footer {
 @media only screen and (max-width: 600px) {
   .container {
     width: 100%;
-    position: absolute;
     left: 50%;
     top: 90px; } }
+
+.sectionCart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0; }
+  .sectionCart .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    .sectionCart .container #root {
+      width: 60%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 12px;
+      height: 100%; }
+      .sectionCart .container #root .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #fdf7fd;
+        justify-content: space-between;
+        box-shadow: 0 5px 5px #2d033b80;
+        border-radius: 5px;
+        padding: 0 10px 10px; }
+        .sectionCart .container #root .box .img-box {
+          width: 100%;
+          height: 150px;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .sectionCart .container #root .box .img-box .images {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            object-position: center; }
+        .sectionCart .container #root .box .bottom {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 50%;
+          text-align: center; }
+          .sectionCart .container #root .box .bottom p {
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            height: 55px;
+            padding: 10px 0; }
+          .sectionCart .container #root .box .bottom h2 {
+            margin: 0;
+            font-weight: bold;
+            padding: 10px 0;
+            font-size: 18px;
+            color: #ff568c; }
+          .sectionCart .container #root .box .bottom button {
+            width: 100%;
+            position: relative;
+            border: none;
+            border-radius: 3px;
+            background-color: #7f1d7f;
+            padding: 7px 25px;
+            cursor: pointer;
+            color: #fff;
+            font-size: 16px; }
+          .sectionCart .container #root .box .bottom button:hover {
+            background-color: #ff568c; }
+    .sectionCart .container .sidebar {
+      width: 40%;
+      border-radius: 5px;
+      background-color: #fdf7fd;
+      margin-left: 10px;
+      padding: 15px;
+      text-align: center; }
+      .sectionCart .container .sidebar .head {
+        background-color: #7f1d7f;
+        border-radius: 3px;
+        height: 50px;
+        padding: 10px;
+        margin-bottom: 15px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        .sectionCart .container .sidebar .head p {
+          margin: 0;
+          font-size: 25px; }
+        .sectionCart .container .sidebar .head .cart {
+          display: flex;
+          background-color: #fff;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 5px;
+          border-radius: 3px;
+          width: 70px;
+          height: 30px; }
+          .sectionCart .container .sidebar .head .cart .bi {
+            color: #7f1d7f;
+            font-size: 25px; }
+          .sectionCart .container .sidebar .head .cart p {
+            height: 25px;
+            width: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 25px;
+            background-color: #7f1d7f;
+            color: #fff;
+            margin: 0;
+            font-size: 18px; }
+      .sectionCart .container .sidebar #cartItem .cart-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 5px 5px #2d033b80;
+        border-radius: 3px;
+        margin: 10px; }
+        .sectionCart .container .sidebar #cartItem .cart-item .row-img {
+          width: 60px;
+          height: 60px;
+          border-radius: 60px;
+          border: 2px solid #7f1d7f;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .sectionCart .container .sidebar #cartItem .cart-item .row-img .rowimg {
+            max-width: 90%;
+            max-height: 47px;
+            border-radius: 47%; }
+        .sectionCart .container .sidebar #cartItem .cart-item p {
+          width: 40%;
+          font-size: 18px;
+          font-weight: bold;
+          letter-spacing: 1px;
+          margin: 0; }
+        .sectionCart .container .sidebar #cartItem .cart-item h2 {
+          width: 20%;
+          font-size: 18px;
+          font-weight: bold;
+          margin: 0;
+          color: #ff568c; }
+        .sectionCart .container .sidebar #cartItem .cart-item .bi {
+          width: 10%;
+          color: #7f1d7f;
+          font-size: 30px; }
+        .sectionCart .container .sidebar #cartItem .cart-item .bi:hover {
+          cursor: pointer;
+          color: #ff568c; }
+      .sectionCart .container .sidebar .foot {
+        display: flex;
+        justify-content: space-between;
+        margin: 25px 0;
+        padding: 15px 0;
+        border-top: 1px solid #2d033b80; }
+        .sectionCart .container .sidebar .foot h3 {
+          color: #4c105c;
+          font-weight: bold; }
+        .sectionCart .container .sidebar .foot #total {
+          font-weight: bold;
+          color: #ff568c; }
+
+@media only screen and (max-width: 600px) {
+  .sectionCart {
+    position: relative; }
+    .sectionCart .container {
+      left: 0;
+      right: 0;
+      top: 0; }
+      .sectionCart .container #root {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5px; }
+        .sectionCart .container #root .box {
+          padding: 5px; }
+          .sectionCart .container #root .box .img-box {
+            height: 80%; }
+          .sectionCart .container #root .box .bottom {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+            justify-content: center; }
+            .sectionCart .container #root .box .bottom p {
+              font-size: 20px;
+              height: 100%;
+              padding: 0; }
+            .sectionCart .container #root .box .bottom h2 {
+              font-size: 20px;
+              height: 100%;
+              padding: 5px 0; }
+            .sectionCart .container #root .box .bottom button {
+              font-size: 18px;
+              height: 100%; }
+      .sectionCart .container .sidebar {
+        margin-left: 5px;
+        padding: 5px; }
+        .sectionCart .container .sidebar .head {
+          height: 70px;
+          padding: 15px;
+          margin-bottom: 15px; }
+          .sectionCart .container .sidebar .head p {
+            font-size: 0px; }
+          .sectionCart .container .sidebar .head .cart {
+            width: 100%;
+            height: 50px;
+            justify-content: space-evenly; }
+            .sectionCart .container .sidebar .head .cart .bi {
+              font-size: 40px; }
+            .sectionCart .container .sidebar .head .cart p {
+              height: 40px;
+              width: 40px;
+              border-radius: 40px;
+              font-size: 30px; }
+        .sectionCart .container .sidebar #cartItem .cart-item {
+          flex-direction: column; }
+          .sectionCart .container .sidebar #cartItem .cart-item .row-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 80px; }
+            .sectionCart .container .sidebar #cartItem .cart-item .row-img .rowimg {
+              max-width: 100%;
+              max-height: 100%; }
+          .sectionCart .container .sidebar #cartItem .cart-item p {
+            width: 100%;
+            font-size: 16px;
+            margin: 5px; }
+          .sectionCart .container .sidebar #cartItem .cart-item h2 {
+            width: 100%;
+            font-size: 20px;
+            margin: 5px; }
+          .sectionCart .container .sidebar #cartItem .cart-item .bi {
+            width: 100%; }
+        .sectionCart .container .sidebar .foot {
+          padding: 15px 10px;
+          border-top: 2px solid #2d033b80; }
+          .sectionCart .container .sidebar .foot h3 {
+            font-size: 22px; }
+          .sectionCart .container .sidebar .foot #total {
+            font-size: 22px; } }

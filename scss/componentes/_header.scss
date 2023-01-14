@@ -7,7 +7,7 @@
             text-decoration: none;
 
             &-logo {
-                width: 20%;
+                width: 25%;
             }
 
             &-text {
@@ -25,11 +25,11 @@
 
                 & a {
                     color: #fff;
-                    font-size: 17px;           
+                    font-size: 20px;           
                 }
 
                 & a a.active, a:hover {
-                    background: #f9d8fb;
+                    background: #fdf7fd;
                     border-radius: 3px;
                     transition: all 0.5s ease;
                     color: #2D033B;
