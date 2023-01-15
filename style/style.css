@@ -468,7 +468,7 @@ footer {
         padding: 15px 0;
         border-top: 1px solid #2d033b80; }
         .sectionCart .container .sidebar .foot h3 {
-          color: #4c105c;
+          color: #212529;
           font-weight: bold; }
         .sectionCart .container .sidebar .foot #total {
           font-weight: bold;
@@ -550,3 +550,62 @@ footer {
             font-size: 22px; }
           .sectionCart .container .sidebar .foot #total {
             font-size: 22px; } }
+
+.sectionProducts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none; }
+  .sectionProducts .containerProducts {
+    width: 100%; }
+    .sectionProducts .containerProducts .row {
+      margin: 10px; }
+      .sectionProducts .containerProducts .row .containerTitle {
+        background: #7f1d7f;
+        padding: 10px;
+        border-radius: 5px; }
+        .sectionProducts .containerProducts .row .containerTitle p {
+          margin: 0;
+          font-size: 35px;
+          color: #fff;
+          font-weight: bold;
+          letter-spacing: 1px; }
+      .sectionProducts .containerProducts .row-products {
+        padding: 5px; }
+        .sectionProducts .containerProducts .row-products-details {
+          background: #fff;
+          border-radius: 5px; }
+          .sectionProducts .containerProducts .row-products-details a {
+            text-decoration: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; }
+            .sectionProducts .containerProducts .row-products-details a img {
+              width: 100%;
+              height: 100%; }
+            .sectionProducts .containerProducts .row-products-details a p {
+              margin: 0;
+              padding: 10px; }
+            .sectionProducts .containerProducts .row-products-details a .name {
+              font-size: 25px;
+              color: #212529;
+              font-weight: bold; }
+            .sectionProducts .containerProducts .row-products-details a .price {
+              font-size: 25px;
+              color: #ff568c;
+              font-weight: bold;
+              letter-spacing: 1px; }
+            .sectionProducts .containerProducts .row-products-details a input {
+              width: 90%;
+              position: relative;
+              border: none;
+              border-radius: 3px;
+              background-color: #7f1d7f;
+              padding: 7px 25px;
+              margin: 10px 0;
+              color: #fff;
+              font-size: 20px; }
+            .sectionProducts .containerProducts .row-products-details a input:hover {
+              background: #ff568c; }

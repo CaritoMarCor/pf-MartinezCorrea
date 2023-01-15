@@ -1,0 +1,84 @@
+.sectionProducts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+
+    & .containerProducts {
+        width: 100%;
+        
+        & .row {
+            margin: 10px;
+
+            & .containerTitle {
+                background: #7f1d7f;
+                padding: 10px;
+                border-radius: 5px;
+    
+                & p {
+                    margin: 0;
+                    font-size: 35px;
+                    color: #fff;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                }
+            }
+    
+            &-products {
+                padding: 5px;
+
+                &-details {
+                    background: #fff;
+                    border-radius: 5px;
+
+                    & a {
+                        text-decoration: none;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+
+                        & img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        & p {
+                            margin: 0;
+                            padding: 10px;
+                        }
+
+                        & .name {
+                            font-size: 25px;
+                            color: #212529;
+                            font-weight: bold;
+                        }
+                        & .price {
+                            font-size: 25px;
+                            color: #ff568c;
+                            font-weight: bold;
+                            letter-spacing: 1px;
+                        }
+
+                        & input {
+                            width: 90%;
+                            position: relative;
+                            border: none;
+                            border-radius: 3px;
+                            background-color: #7f1d7f;
+                            padding: 7px 25px;
+                            margin: 10px 0;
+                            color: #fff;
+                            font-size: 20px;
+                        }
+
+                        & input:hover {
+                            background: #ff568c;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
