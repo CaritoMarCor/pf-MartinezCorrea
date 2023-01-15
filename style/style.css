@@ -6,11 +6,11 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Roboto Mono' !important;
+  font-family: 'Sen' !important;
   background-image: url("./../../resources/img/background.png"); }
 
 footer {
-  font-family: 'Roboto Mono'; }
+  font-family: 'Sen'; }
 
 @font-face {
   font-family: 'Roboto Mono', monospace;
@@ -21,6 +21,26 @@ footer {
   font-family: 'Roboto Mono', monospace;
   src: url("./../../resources/font/RobotoMono-Bold.ttf");
   font-weight: bold; }
+
+@font-face {
+  font-family: 'Sen', sans-serif;
+  src: url("./../../resources/font/Sen-Regular.ttf");
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Sen', sans-serif;
+  src: url("./../../resources/font/Sen-Bold.ttf");
+  font-style: bold; }
+
+@font-face {
+  font-family: 'Merienda', cursive;
+  src: url("./../../resources/font/Merienda-Regular.ttf");
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merienda', cursive;
+  src: url("./../../resources/font/Merienda-Bold.ttf");
+  font-style: bold; }
 
 .n-menu {
   background: linear-gradient(135deg, #C147E9, #2D033B);
