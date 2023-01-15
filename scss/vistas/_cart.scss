@@ -70,7 +70,7 @@
                     }
 
                     & button {
-                        width: 100%;
+                        width: 95%;
                         position: relative;
                         border: none;
                         border-radius: 3px;
@@ -79,10 +79,12 @@
                         cursor: pointer;
                         color: #fff;
                         font-size: 16px;
+                        transition: transform 0.5s;
                     }
 
                     & button:hover {
                         background-color: #ff568c;
+                        transform: scale(1.1);
                     }
                 }
             }

@@ -58,8 +58,630 @@
             </div>
         </nav>
     </header>
+    <!-- Inicio del Main -->
     <main>
-        <section class="sectionProducts">
+        <!-- Modal para visualizar el detalle de los Productos-->
+        <section class="sectionModals">
+            <!-- Modal producto 1 -->
+            <div class="containerModal">
+                <div class="modal fade" id="producto1" tabindex="-1" aria-labelledby="producto1ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="producto1"><i class="fa-solid fa-gamepad"></i> Nintendo DSI</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="row-cols-1 modal-body">
+                                <div class="pictures">
+                                    <div class="big-img1">
+                                        <img src="./../resources/img/consolas/nintendodspink.png" />
+                                    </div>
+                                    <div class="images">
+                                        <div class="small-img">
+                                            <img src="./../resources/img/consolas/nintendodspink.png" onclick="showImg1(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/consolas/nintendodspink1.png" onclick="showImg1(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/consolas/nintendodspink2.png" onclick="showImg1(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/consolas/nintendodspink3.png" onclick="showImg1(this.src)"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <div class="tree">
+                                        <a href="./../index.html"> Inicio </a> > <a href="./products.html"> Productos </a> > <a href="#"> Nintendo DSI </a>
+                                    </div>
+                                    <div class="name-product">
+                                        Nintendo DSI
+                                    </div>
+                                    <div class="sku">
+                                        SKU: CNSL2596
+                                    </div>
+                                    <div class="ratings">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <div class="price">
+                                        CLP: $45.990
+                                    </div>
+                                    <div class="availability">
+                                        Disponibilidad: <p>En Stock</p>
+                                    </div>
+                                    <div class="condition">
+                                        Condición: <p>Usado, cómo nuevo</p>
+                                    </div>
+                                    <div class="brand">
+                                        Marca: <p>Nintendo Company, Ltda.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="./cart.html">
+                                    <button type="button" class="btn">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal producto 2 -->
+            <div class="containerModal">
+                <div class="modal fade" id="producto2" tabindex="-1" aria-labelledby="producto2ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="producto2"><i class="fa-solid fa-gamepad"></i> Nintendo Switch Lite</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="row-cols-1 modal-body">
+                                <div class="pictures">
+                                    <div class="big-img2">
+                                        <img src="./../resources/img/consolas/nscoral.png" />
+                                    </div>
+                                    <div class="images">
+                                        <div class="small-img">
+                                            <img src="./../resources/img/consolas/nscoral.png" onclick="showImg2(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/consolas/nscoral1.png" onclick="showImg2(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/consolas/nscoral2.png" onclick="showImg2(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/consolas/nscoral3.png" onclick="showImg2(this.src)"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <div class="tree">
+                                        <a href="./../index.html"> Inicio </a> > <a href="./products.html"> Productos </a> > <a href="#"> Nintendo Switch Lite </a>
+                                    </div>
+                                    <div class="name-product">
+                                        Nintendo Switch Lite
+                                    </div>
+                                    <div class="sku">
+                                        SKU: CNSL8473
+                                    </div>
+                                    <div class="ratings">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <div class="price">
+                                        CLP: $100.990
+                                    </div>
+                                    <div class="availability">
+                                        Disponibilidad: <p>En Stock</p>
+                                    </div>
+                                    <div class="condition">
+                                        Condición: <p>Nuevo</p>
+                                    </div>
+                                    <div class="brand">
+                                        Marca: <p>Nintendo Company, Ltda.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="./cart.html">
+                                    <button type="button" class="btn">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal producto 3 -->
+            <div class="containerModal">
+                <div class="modal fade" id="producto3" tabindex="-1" aria-labelledby="producto3ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="producto3"><i class="fa-solid fa-gamepad"></i> PS Vita Slim</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="row-cols-1 modal-body">
+                                <div class="pictures">
+                                    <div class="big-img3">
+                                        <img src="./../resources/img/consolas/psvita.png" />
+                                    </div>
+                                    <div class="images">
+                                        <div class="small-img">
+                                            <img src="./../resources/img/consolas/psvita.png" onclick="showImg3(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/consolas/psvita1.png" onclick="showImg3(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/consolas/psvita2.png" onclick="showImg3(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/consolas/psvita3.png" onclick="showImg3(this.src)"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <div class="tree">
+                                        <a href="./../index.html"> Inicio </a> > <a href="./products.html"> Productos </a> > <a href="#"> PS Vita Slim</a>
+                                    </div>
+                                    <div class="name-product">
+                                        PS Vita Slim
+                                    </div>
+                                    <div class="sku">
+                                        SKU: CNSL6539
+                                    </div>
+                                    <div class="ratings">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <div class="price">
+                                        CLP: $120.990
+                                    </div>
+                                    <div class="availability">
+                                        Disponibilidad: <p>En Stock</p>
+                                    </div>
+                                    <div class="condition">
+                                        Condición: <p>Usado, buen estado</p>
+                                    </div>
+                                    <div class="brand">
+                                        Marca: <p>Sony Computer Entertainment</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="./cart.html">
+                                    <button type="button" class="btn">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal producto 4 -->
+            <div class="containerModal">
+                <div class="modal fade" id="producto4" tabindex="-1" aria-labelledby="producto4ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="producto4"><i class="fa-solid fa-keyboard"></i> Audífonos SOMIC Gaming</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="row-cols-1 modal-body">
+                                <div class="pictures">
+                                    <div class="big-img4">
+                                        <img src="./../resources/img/perifericos/aud_somic.png"/>
+                                    </div>
+                                    <div class="images">
+                                        <div class="small-img">
+                                            <img src="./../resources/img/perifericos/aud_somic.png" onclick="showImg4(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/perifericos/audifonos_rosados1.png" onclick="showImg4(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/perifericos/audifonos_rosados2.png" onclick="showImg4(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/perifericos/audifonos_rosados3.png" onclick="showImg4(this.src)"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <div class="tree">
+                                        <a href="./../index.html"> Inicio </a> > <a href="./products.html"> Productos </a> > <a href="#"> Audífonos SOMIC Gaming</a>
+                                    </div>
+                                    <div class="name-product">
+                                        Audífonos SOMIC Gaming
+                                    </div>
+                                    <div class="sku">
+                                        SKU: PRFS4589
+                                    </div>
+                                    <div class="ratings">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <div class="price">
+                                        CLP: $39.990
+                                    </div>
+                                    <div class="availability">
+                                        Disponibilidad: <p>En Stock</p>
+                                    </div>
+                                    <div class="condition">
+                                        Condición: <p>Nuevo</p>
+                                    </div>
+                                    <div class="brand">
+                                        Marca: <p>SOMIC Technology Co., Ltda.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="./cart.html">
+                                    <button type="button" class="btn">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal producto 5 -->
+            <div class="containerModal">
+                <div class="modal fade" id="producto5" tabindex="-1" aria-labelledby="producto5ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="producto5"><i class="fa-solid fa-keyboard"></i> Razer Viper Ultimate</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="row-cols-1 modal-body">
+                                <div class="pictures">
+                                    <div class="big-img5">
+                                        <img src="./../resources/img/perifericos/mouserosado.png"/>
+                                    </div>
+                                    <div class="images">
+                                        <div class="small-img">
+                                            <img src="./../resources/img/perifericos/mouserosado.png" onclick="showImg5(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/perifericos/mouserosado1.png" onclick="showImg5(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/perifericos/mouserosado2.png" onclick="showImg5(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/perifericos/mouserosado3.png" onclick="showImg5(this.src)"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <div class="tree">
+                                        <a href="./../index.html"> Inicio </a> > <a href="./products.html"> Productos </a> > <a href="#"> Razer Viper Ultimate</a>
+                                    </div>
+                                    <div class="name-product">
+                                        Razer Viper Ultimate
+                                    </div>
+                                    <div class="sku">
+                                        SKU: PRFS7778
+                                    </div>
+                                    <div class="ratings">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <div class="price">
+                                        CLP: $99.990
+                                    </div>
+                                    <div class="availability">
+                                        Disponibilidad: <p>En Stock</p>
+                                    </div>
+                                    <div class="condition">
+                                        Condición: <p>Nuevo</p>
+                                    </div>
+                                    <div class="brand">
+                                        Marca: <p>Razer Inc.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="./cart.html">
+                                    <button type="button" class="btn">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal producto 6 -->
+            <div class="containerModal">
+                <div class="modal fade" id="producto6" tabindex="-1" aria-labelledby="producto6ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="producto6"><i class="fa-solid fa-keyboard"></i> Teclado Motospeed CK82</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="row-cols-1 modal-body">
+                                <div class="pictures">
+                                    <div class="big-img6">
+                                        <img src="./../resources/img/perifericos/tecladorosado.png"/>
+                                    </div>
+                                    <div class="images">
+                                        <div class="small-img">
+                                            <img src="./../resources/img/perifericos/tecladorosado.png" onclick="showImg6(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/perifericos/tecladorosado1.png" onclick="showImg6(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/perifericos/tecladorosado2.png" onclick="showImg6(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/perifericos/tecladorosado3.png" onclick="showImg6(this.src)"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <div class="tree">
+                                        <a href="./../index.html"> Inicio </a> > <a href="./products.html"> Productos </a> > <a href="#"> Teclado Motospeed CK82</a>
+                                    </div>
+                                    <div class="name-product">
+                                        Teclado Motospeed CK82
+                                    </div>
+                                    <div class="sku">
+                                        SKU: PRFS5820
+                                    </div>
+                                    <div class="ratings">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="price">
+                                        CLP: $45.990
+                                    </div>
+                                    <div class="availability">
+                                        Disponibilidad: <p>En Stock</p>
+                                    </div>
+                                    <div class="condition">
+                                        Condición: <p>Nuevo</p>
+                                    </div>
+                                    <div class="brand">
+                                        Marca: <p>MOTOSPEED</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="./cart.html">
+                                    <button type="button" class="btn">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal producto 7 -->
+            <div class="containerModal">
+                <div class="modal fade" id="producto7" tabindex="-1" aria-labelledby="producto7ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="producto7"><i class="fa-solid fa-heart"></i> Parlante Divoom Ditto Plus</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="row-cols-1 modal-body">
+                                <div class="pictures">
+                                    <div class="big-img7">
+                                        <img src="./../resources/img/otros/divoom-dito-pink.png"/>
+                                    </div>
+                                    <div class="images">
+                                        <div class="small-img">
+                                            <img src="./../resources/img/otros/divoom-dito-pink.png" onclick="showImg7(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/otros/divoom-dito-pink1.png" onclick="showImg7(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/otros/divoom-dito-pink2.png" onclick="showImg7(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/otros/divoom-dito-pink3.png" onclick="showImg7(this.src)"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <div class="tree">
+                                        <a href="./../index.html"> Inicio </a> > <a href="./products.html"> Productos </a> > <a href="#"> Parlante Divoom Ditto Plus</a>
+                                    </div>
+                                    <div class="name-product">
+                                        Parlante Divoom Ditto Plus
+                                    </div>
+                                    <div class="sku">
+                                        SKU: TRS32584
+                                    </div>
+                                    <div class="ratings">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="price">
+                                        CLP: $50.990
+                                    </div>
+                                    <div class="availability">
+                                        Disponibilidad: <p>En Stock</p>
+                                    </div>
+                                    <div class="condition">
+                                        Condición: <p>Nuevo</p>
+                                    </div>
+                                    <div class="brand">
+                                        Marca: <p>Divoom Technology Co., Ltd.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="./cart.html">
+                                    <button type="button" class="btn">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal producto 8 -->
+            <div class="containerModal">
+                <div class="modal fade" id="producto8" tabindex="-1" aria-labelledby="producto8ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="producto8"><i class="fa-solid fa-heart"></i> Control IINE Kitten</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="row-cols-1 modal-body">
+                                <div class="pictures">
+                                    <div class="big-img8">
+                                        <img src="./../resources/img/otros/control-kitten.png"/>
+                                    </div>
+                                    <div class="images">
+                                        <div class="small-img">
+                                            <img src="./../resources/img/otros/control-kitten.png" onclick="showImg8(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/otros/control1.png" onclick="showImg8(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/otros/control2.png" onclick="showImg8(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/otros/control3.png" onclick="showImg8(this.src)"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <div class="tree">
+                                        <a href="./../index.html"> Inicio </a> > <a href="./products.html"> Productos </a> > <a href="#"> Control IINE Kitten</a>
+                                    </div>
+                                    <div class="name-product">
+                                        Control IINE Kitten
+                                    </div>
+                                    <div class="sku">
+                                        SKU: TRS56387
+                                    </div>
+                                    <div class="ratings">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <div class="price">
+                                        CLP: $30.990
+                                    </div>
+                                    <div class="availability">
+                                        Disponibilidad: <p>En Stock</p>
+                                    </div>
+                                    <div class="condition">
+                                        Condición: <p>Nuevo</p>
+                                    </div>
+                                    <div class="brand">
+                                        Marca: <p>Dongguan IINE Electronics Co., Ltd.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="./cart.html">
+                                    <button type="button" class="btn">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal producto 9 -->
+            <div class="containerModal">
+                <div class="modal fade" id="producto9" tabindex="-1" aria-labelledby="producto9ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="producto9"><i class="fa-solid fa-heart"></i> Razer Orejas Kitty</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="row-cols-1 modal-body">
+                                <div class="pictures">
+                                    <div class="big-img9">
+                                        <img src="./../resources/img/otros/orejas-razer.png"/>
+                                    </div>
+                                    <div class="images">
+                                        <div class="small-img">
+                                            <img src="./../resources/img/otros/orejas-razer.png" onclick="showImg9(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/otros/Orejasrazer1.png" onclick="showImg9(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/otros/Orejasrazer2.png" onclick="showImg9(this.src)"/>
+                                        </div>
+                                        <div class="small-img">
+                                            <img src="./../resources/img/otros/Orejasrazer3.png" onclick="showImg9(this.src)"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <div class="tree">
+                                        <a href="./../index.html"> Inicio </a> > <a href="./products.html"> Productos </a> > <a href="#"> Razer Orejas Kitty</a>
+                                    </div>
+                                    <div class="name-product">
+                                        Razer Orejas Kitty
+                                    </div>
+                                    <div class="sku">
+                                        SKU: TRS04896
+                                    </div>
+                                    <div class="ratings">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="price">
+                                        CLP: $10.990
+                                    </div>
+                                    <div class="availability">
+                                        Disponibilidad: <p>En Stock</p>
+                                    </div>
+                                    <div class="condition">
+                                        Condición: <p>Nuevo</p>
+                                    </div>
+                                    <div class="brand">
+                                        Marca: <p>Razer Inc.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="./cart.html">
+                                    <button type="button" class="btn">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <section class="sectionProducts">
             <div class="containerProducts">
                 <div class="row">
                     <div class="col-md-12 containerTitle" data-aos="fade-right">
@@ -67,7 +689,7 @@
                     </div>
                     <div class="col-md-4 row-products" data-aos="zoom-in">
                         <div class="row-products-details">
-                            <a href="">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#producto1" >
                                 <img src="./../resources/img/consolas/nintendodspink.png" alt="producto1">
                                 <p class="name">Nintendo DSI</p>
                                 <p class="price">$45.990</p>
@@ -77,7 +699,7 @@
                     </div>
                     <div class="col-md-4 row-products" data-aos="zoom-in">
                         <div class="row-products-details">
-                            <a href="">
+                            <a data-bs-toggle="modal" data-bs-target="#producto2">
                                 <img src="./../resources/img/consolas/nscoral.png" alt="producto2">
                                 <p class="name">Nintendo Switch Lite</p>
                                 <p class="price">$100.990</p>
@@ -87,7 +709,7 @@
                     </div>
                     <div class="col-md-4 row-products" data-aos="zoom-in">
                         <div class="row-products-details">
-                            <a href="">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#producto3">
                                 <img src="./../resources/img/consolas/psvita.png" alt="producto3">
                                 <p class="name">PS Vita Slim</p>
                                 <p class="price">$120.990</p>
@@ -100,7 +722,7 @@
                     </div>
                     <div class="col-md-4 row-products" data-aos="zoom-in">
                         <div class="row-products-details">
-                            <a href="">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#producto4">
                                 <img src="./../resources/img/perifericos/aud_somic.png" alt="producto4">
                                 <p class="name">Audífonos SOMIC Gaming</p>
                                 <p class="price">$39.990</p>
@@ -110,7 +732,7 @@
                     </div>
                     <div class="col-md-4 row-products" data-aos="zoom-in">
                         <div class="row-products-details">
-                            <a href="">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#producto5">
                                 <img src="./../resources/img/perifericos/mouserosado.png" alt="producto5">
                                 <p class="name">Razer Viper Ultimate</p>
                                 <p class="price">$99.990</p>
@@ -120,7 +742,7 @@
                     </div>
                     <div class="col-md-4 row-products" data-aos="zoom-in">
                         <div class="row-products-details">
-                            <a href="">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#producto6">
                                 <img src="./../resources/img/perifericos/tecladorosado.png" alt="producto6">
                                 <p class="name">Teclado Motospeed CK82</p>
                                 <p class="price">$45.990</p>
@@ -133,7 +755,7 @@
                     </div>
                     <div class="col-md-4 row-products" data-aos="zoom-in">
                         <div class="row-products-details">
-                            <a href="">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#producto7">
                                 <img src="./../resources/img/otros/divoom-dito-pink.png" alt="producto7">
                                 <p class="name">Parlante Divoom Ditto Plus</p>
                                 <p class="price">$50.990</p>
@@ -143,9 +765,9 @@
                     </div>
                     <div class="col-md-4 row-products" data-aos="zoom-in">
                         <div class="row-products-details">
-                            <a href="">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#producto8">
                                 <img src="./../resources/img/otros/control-kitten.png" alt="producto8">
-                                <p class="name">Nintendo DSI</p>
+                                <p class="name">Control IINE Kitten</p>
                                 <p class="price">$30.990</p>
                                 <input type="button" value="Ver Producto" />
                             </a>
@@ -153,7 +775,7 @@
                     </div>
                     <div class="col-md-4 row-products" data-aos="zoom-in">
                         <div class="row-products-details">
-                            <a href="">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#producto9">
                                 <img src="./../resources/img/otros/orejas-razer.png" alt="producto9">
                                 <p class="name">Razer Orejas Kitty</p>
                                 <p class="price">$10.990</p>
@@ -207,6 +829,8 @@
             </div>
         </div>
     </footer>
+    <!-- Script para cambiar las fotos del detalle del producto -->
+    <script src="./../resources/js/productsImg.js"></script>
     <!-- Script Fontawesome -->
     <script src="https://kit.fontawesome.com/f4d10b5392.js" crossorigin="anonymous"></script>
     <!-- Script Bootstrap -->

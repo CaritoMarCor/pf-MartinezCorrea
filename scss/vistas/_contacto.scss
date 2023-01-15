@@ -84,16 +84,7 @@
                             letter-spacing: 1px;
                             color: #ff568c;
                         }
-
-                        // & input[type="email"]:invalid ~ span,
-                        // & input[type="tel"]:invalid ~ span {
-                        //     //transform: translateY(-20px);
-                        //     // font-size: 12px;
-                        //     // font-weight: bold;
-                        //     // letter-spacing: 1px;
-                        //     // color: #ff568c;
-                        // }
-
+                        
                         & input[type="submit"],
                         & input[type="reset"] {
                             position: relative;
@@ -104,11 +95,13 @@
                             max-width: 48%;
                             padding: 10px;
                             border-radius: 3px;
+                            transition: transform 0.5s;
                         }
 
                         & input[type="submit"]:hover,
                         & input[type="reset"]:hover {
                             background: #ff568c;
+                            transform: scale(1.1);
                         }
                     }
                 }

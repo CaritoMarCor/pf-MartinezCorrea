@@ -257,10 +257,12 @@ footer {
               border: none;
               max-width: 48%;
               padding: 10px;
-              border-radius: 3px; }
+              border-radius: 3px;
+              transition: transform 0.5s; }
             .sectionContact .container .row .infoForm .contactForm .inputBox input[type="submit"]:hover,
             .sectionContact .container .row .infoForm .contactForm .inputBox input[type="reset"]:hover {
-              background: #ff568c; }
+              background: #ff568c;
+              transform: scale(1.1); }
       .sectionContact .container .row .infoContact {
         background: #7f1d7f;
         padding: 40px;
@@ -367,7 +369,7 @@ footer {
             font-size: 18px;
             color: #ff568c; }
           .sectionCart .container #root .box .bottom button {
-            width: 100%;
+            width: 95%;
             position: relative;
             border: none;
             border-radius: 3px;
@@ -375,9 +377,11 @@ footer {
             padding: 7px 25px;
             cursor: pointer;
             color: #fff;
-            font-size: 16px; }
+            font-size: 16px;
+            transition: transform 0.5s; }
           .sectionCart .container #root .box .bottom button:hover {
-            background-color: #ff568c; }
+            background-color: #ff568c;
+            transform: scale(1.1); }
     .sectionCart .container .sidebar {
       width: 40%;
       border-radius: 5px;
@@ -551,6 +555,160 @@ footer {
           .sectionCart .container .sidebar .foot #total {
             font-size: 22px; } }
 
+.sectionModals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none; }
+  .sectionModals .containerModal .modal-dialog {
+    display: flex;
+    justify-content: center; }
+    .sectionModals .containerModal .modal-dialog .modal-content {
+      height: 100%; }
+      .sectionModals .containerModal .modal-dialog .modal-content .modal-header {
+        background-color: #7f1d7f; }
+        .sectionModals .containerModal .modal-dialog .modal-content .modal-header h5 {
+          color: #fff;
+          font-weight: bold;
+          letter-spacing: 1px; }
+      .sectionModals .containerModal .modal-dialog .modal-content .modal-body {
+        width: 100%;
+        padding: 5px; }
+        .sectionModals .containerModal .modal-dialog .modal-content .modal-body .pictures {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          flex-direction: column;
+          width: 100%; }
+          .sectionModals .containerModal .modal-dialog .modal-content .modal-body .pictures .big-img1,
+          .sectionModals .containerModal .modal-dialog .modal-content .modal-body .pictures .big-img2,
+          .sectionModals .containerModal .modal-dialog .modal-content .modal-body .pictures .big-img3,
+          .sectionModals .containerModal .modal-dialog .modal-content .modal-body .pictures .big-img4,
+          .sectionModals .containerModal .modal-dialog .modal-content .modal-body .pictures .big-img5,
+          .sectionModals .containerModal .modal-dialog .modal-content .modal-body .pictures .big-img6,
+          .sectionModals .containerModal .modal-dialog .modal-content .modal-body .pictures .big-img7,
+          .sectionModals .containerModal .modal-dialog .modal-content .modal-body .pictures .big-img8,
+          .sectionModals .containerModal .modal-dialog .modal-content .modal-body .pictures .big-img9 {
+            max-width: 550px;
+            width: 100%; }
+            .sectionModals .containerModal .modal-dialog .modal-content .modal-body .pictures .big-img1 img,
+            .sectionModals .containerModal .modal-dialog .modal-content .modal-body .pictures .big-img2 img,
+            .sectionModals .containerModal .modal-dialog .modal-content .modal-body .pictures .big-img3 img,
+            .sectionModals .containerModal .modal-dialog .modal-content .modal-body .pictures .big-img4 img,
+            .sectionModals .containerModal .modal-dialog .modal-content .modal-body .pictures .big-img5 img,
+            .sectionModals .containerModal .modal-dialog .modal-content .modal-body .pictures .big-img6 img,
+            .sectionModals .containerModal .modal-dialog .modal-content .modal-body .pictures .big-img7 img,
+            .sectionModals .containerModal .modal-dialog .modal-content .modal-body .pictures .big-img8 img,
+            .sectionModals .containerModal .modal-dialog .modal-content .modal-body .pictures .big-img9 img {
+              width: inherit; }
+          .sectionModals .containerModal .modal-dialog .modal-content .modal-body .pictures .images {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 650px; }
+            .sectionModals .containerModal .modal-dialog .modal-content .modal-body .pictures .images .small-img {
+              width: 100%;
+              overflow: hidden; }
+              .sectionModals .containerModal .modal-dialog .modal-content .modal-body .pictures .images .small-img img {
+                width: 100%;
+                cursor: pointer;
+                transition: all 0.3s ease; }
+            .sectionModals .containerModal .modal-dialog .modal-content .modal-body .pictures .images .small-img:hover img {
+              transform: scale(1.2); }
+        .sectionModals .containerModal .modal-dialog .modal-content .modal-body .description {
+          width: 100%;
+          padding: 10px 15px 0px; }
+          .sectionModals .containerModal .modal-dialog .modal-content .modal-body .description .tree {
+            width: 100%; }
+            .sectionModals .containerModal .modal-dialog .modal-content .modal-body .description .tree a {
+              font-size: 15px;
+              color: #2D033B;
+              text-decoration: none;
+              font-weight: bold;
+              letter-spacing: 1px; }
+          .sectionModals .containerModal .modal-dialog .modal-content .modal-body .description .name-product {
+            width: 100%;
+            margin: 0;
+            font-size: 35px;
+            color: #212529;
+            font-weight: bold;
+            letter-spacing: 1px; }
+          .sectionModals .containerModal .modal-dialog .modal-content .modal-body .description .sku {
+            width: 100%;
+            margin: 0;
+            font-size: 18px;
+            color: #21252990;
+            letter-spacing: 1px; }
+          .sectionModals .containerModal .modal-dialog .modal-content .modal-body .description .ratings {
+            width: 100%;
+            padding: 10px 0; }
+            .sectionModals .containerModal .modal-dialog .modal-content .modal-body .description .ratings i {
+              color: #ff8500;
+              font-size: 20px; }
+          .sectionModals .containerModal .modal-dialog .modal-content .modal-body .description .price {
+            width: 100%;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 10px 0;
+            color: #ff568c; }
+          .sectionModals .containerModal .modal-dialog .modal-content .modal-body .description .availability {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            font-size: 20px;
+            color: #212529;
+            padding: 5px 0;
+            font-weight: bold; }
+            .sectionModals .containerModal .modal-dialog .modal-content .modal-body .description .availability p {
+              margin: 0;
+              letter-spacing: 1px;
+              color: #008000; }
+          .sectionModals .containerModal .modal-dialog .modal-content .modal-body .description .condition {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            font-size: 20px;
+            color: #212529;
+            padding: 5px 0;
+            font-weight: bold; }
+            .sectionModals .containerModal .modal-dialog .modal-content .modal-body .description .condition p {
+              margin: 0;
+              letter-spacing: 1px;
+              font-weight: normal; }
+          .sectionModals .containerModal .modal-dialog .modal-content .modal-body .description .brand {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            font-size: 20px;
+            color: #212529;
+            padding: 5px 0;
+            font-weight: bold; }
+            .sectionModals .containerModal .modal-dialog .modal-content .modal-body .description .brand p {
+              margin: 0;
+              letter-spacing: 1px;
+              font-weight: normal; }
+      .sectionModals .containerModal .modal-dialog .modal-content .modal-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        padding: 0; }
+        .sectionModals .containerModal .modal-dialog .modal-content .modal-footer a {
+          margin: 10px; }
+          .sectionModals .containerModal .modal-dialog .modal-content .modal-footer a .btn {
+            position: relative;
+            border: none;
+            border-radius: 3px;
+            background-color: #7f1d7f;
+            padding: 10px 30px;
+            margin: 10px 0;
+            color: #fff;
+            font-size: 20px;
+            transition: transform 0.5s; }
+          .sectionModals .containerModal .modal-dialog .modal-content .modal-footer a .btn:hover {
+            background: #ff568c;
+            transform: scale(1.1); }
+
 .sectionProducts {
   display: flex;
   justify-content: center;
@@ -598,7 +756,7 @@ footer {
               font-weight: bold;
               letter-spacing: 1px; }
             .sectionProducts .containerProducts .row-products-details a input {
-              width: 90%;
+              width: 80%;
               position: relative;
               border: none;
               border-radius: 3px;
@@ -606,6 +764,8 @@ footer {
               padding: 7px 25px;
               margin: 10px 0;
               color: #fff;
-              font-size: 20px; }
+              font-size: 20px;
+              transition: transform 0.5s; }
             .sectionProducts .containerProducts .row-products-details a input:hover {
-              background: #ff568c; }
+              background: #ff568c;
+              transform: scale(1.1); }
