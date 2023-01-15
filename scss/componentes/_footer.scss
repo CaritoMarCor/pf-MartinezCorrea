@@ -1,66 +1,70 @@
-.container-fluid {
-    background: linear-gradient(135deg, #C147E9, #2D033B);
-
-    .n-footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        &-brand {
-            & a {
-                color: #fff;
+.sectionFooter{
+    & .container-fluid {
+        background: linear-gradient(135deg, #C147E9, #2D033B);
+    
+        & .n-footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            &-brand {
+                & a {
+                    color: #fff;
+                }
+    
+                & img {
+                    width: 40%;
+                }
+    
+                &-col {
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    font-weight: bold;
+                    font-size: 28px;
+                }
             }
-
-            & img {
-                width: 40%;
-            }
-
-            &-col {
-                display: flex;
-                justify-content: left;
-                align-items: center;
-                font-weight: bold;
-                font-size: 28px;
-            }
-        }
-
-        &-tree {
-            text-align: right;
-            font-size: 17px;
-            margin: 0;
-
-            & a {
-                color: #fff;
-                padding: 8px
-            }
-
-            & a a.active, a:hover {
-                background: #fdf7fd;
-                border-radius: 3px;
-                transition: all 0.5s ease;
-                color: #2D033B;
+    
+            &-tree {
+                text-align: right;
+                font-size: 17px;
+                margin: 0;
+    
+                & a {
+                    color: #fff;
+                    padding: 8px
+                }
+    
+                & a a.active, a:hover {
+                    background: #fdf7fd;
+                    border-radius: 3px;
+                    transition: all 0.5s ease;
+                    color: #2D033B;
+                }
             }
         }
     }
 }
         
 @media (max-width: 768px) {
-    .container-fluid {
-        .n-footer {
-            &-brand {
-                & img {
-                    width: 30%;
-                }
+    .sectionFooter{
+        & .container-fluid {
+            .n-footer {
+                &-brand {
+                    & img {
+                        width: 30%;
+                    }
 
-                &-col {
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    font-size: 22px;
-                }
+                    &-col {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        font-size: 22px;
+                    }
 
-                &-tree {
-                    text-align: center;
-                    padding: 20px;
+                    &-tree {
+                        text-align: center;
+                        padding: 20px;
+                    }
                 }
             }
         }
