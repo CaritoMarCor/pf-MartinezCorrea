@@ -35,42 +35,45 @@
 <body class="background">
     <!-- Navbar con bootstrap -->
     <header>
-        <nav class="navbar navbar-expand-lg n-menu">
-            <div class="container-fluid n-menu-contenido">
-                <a class="navbar-brand n-menu-contenido-brand" href="./../index.html">
-                    <span><img class="n-menu-contenido-brand-logo" src="./../resources/img/logo.png" alt="Logo"></span>
-                    <span class="n-menu-contenido-brand-text">Pink SetUp</span>
-                </a>
-                <button class="navbar-toggler b-toggler navbar-dark border-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon b-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse n-collapse" id="navbarNav">
-                    <ul class="navbar-nav n-collapse-ul">
-                        <li class="nav-item n-collapse-ul-li">
-                            <a class="nav-link" href="./../index.html"><i class="bi bi-house-heart-fill"></i> Inicio</a>
-                        </li>
-                        <li class="nav-item n-collapse-ul-li">
-                            <a class="nav-link" href="./gallery.html"><i class="bi bi-image-fill"></i> Galería</a>
-                        </li>
-                        <li class="nav-item n-collapse-ul-li">
-                            <a class="nav-link" href="./products.html"><i class="bi bi-balloon-heart-fill"></i> Productos</a>
-                        </li>
-                        <li class="nav-item n-collapse-ul-li">
-                            <a class="nav-link" href="./contacto.html"><i class="bi bi-person-vcard-fill"></i> Contacto</a>
-                        </li>
-                        <li class="nav-item n-collapse-ul-li">
-                            <a class="nav-link" href="./cart.html"><i class="bi bi-bag-heart-fill"></i> Carrito</a>
-                        </li>
-                    </ul>
+        <section class="sectionNav">
+            <nav class="navbar navbar-expand-lg n-menu">
+                <div class="container-fluid n-menu-contenido">
+                    <a class="navbar-brand n-menu-contenido-brand" href="./../index.html">
+                        <span><img class="n-menu-contenido-brand-logo" src="./../resources/img/logo.png" alt="Logo"></span>
+                        <span class="n-menu-contenido-brand-text">Pink SetUp</span>
+                    </a>
+                    <button class="navbar-toggler b-toggler navbar-dark border-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon b-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse n-collapse" id="navbarNav">
+                        <ul class="navbar-nav n-collapse-ul">
+                            <li class="nav-item n-collapse-ul-li">
+                                <a class="nav-link" href="./../index.html"><i class="bi bi-house-heart-fill"></i> Inicio</a>
+                            </li>
+                            <li class="nav-item n-collapse-ul-li">
+                                <a class="nav-link" href="./gallery.html"><i class="bi bi-image-fill"></i> Galería</a>
+                            </li>
+                            <li class="nav-item n-collapse-ul-li">
+                                <a class="nav-link" href="./products.html"><i class="bi bi-balloon-heart-fill"></i> Productos</a>
+                            </li>
+                            <li class="nav-item n-collapse-ul-li">
+                                <a class="nav-link" href="./contacto.html"><i class="bi bi-person-vcard-fill"></i> Contacto</a>
+                            </li>
+                            <li class="nav-item n-collapse-ul-li">
+                                <a class="nav-link" href="./cart.html"><i class="bi bi-bag-heart-fill"></i> Carrito</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </section>
     </header>
     <!-- Contenido Principal -->
     <main>
         <section class="sectionContact">
             <div class="container">
                 <div class="row">
+                    <!-- Formulario de contacto -->
                     <div class="col-md-7 infoForm">
                         <form class="contactForm" action="">
                             <h2>¡Envíanos un Mensaje!</h2>
@@ -102,6 +105,7 @@
                             </div>
                         </form>
                     </div>
+                    <!-- Información Brand (no real) -->
                     <div class="col-md-5 infoContact">
                         <h2>Contacto</h2>
                         <ul class="info">
@@ -137,7 +141,7 @@
         <section class="sectionFooter">
             <div class="container-fluid">
                 <div class="row p-1 n-footer">
-                    <div class="col-md-6 col-lg-2 n-footer-brand">
+                    <div class="col col-xs-2 col-md-2 col-lg-2 n-footer-brand">
                         <a class="text-decoration-none" href="./../index.html">
                             <div class="row">
                                 <div class="col text-end" style="padding: 0;">
@@ -149,27 +153,27 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-6 col-lg-2 n-footer-tree">
+                    <div class="col col-xs-2 col-md-2 col-lg-2 n-footer-tree">
                         <div class="n-footer-brand-tree">
                             <a class="mb-0 text-decoration-none" href="./../index.html"><i class="bi bi-house-heart-fill"></i> Inicio</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-2 n-footer-tree">
+                    <div class="col col-xs-2 col-md-2 col-lg-2 n-footer-tree">
                         <div class="n-footer-brand-tree">
                             <a class="mb-0 text-decoration-none" href="./gallery.html"><i class="bi bi-house-heart-fill"></i> Galería</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-2 n-footer-tree">
+                    <div class="col col-xs-2 col-md-2 col-lg-2 n-footer-tree">
                         <div class="n-footer-brand-tree">
                             <a class="mb-0 text-decoration-none" href="./products.html"><i class="bi bi-balloon-heart-fill"></i> Productos</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-2 n-footer-tree">
+                    <div class="col col-xs-2 col-md-2 col-lg-2 n-footer-tree">
                         <div class="n-footer-brand-tree">
                             <a class="mb-0 text-decoration-none" href="./contacto.html"><i class="bi bi-person-vcard-fill"></i> Contacto</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-2 n-footer-tree">
+                    <div class="col col-xs-2 col-md-2 col-lg-2 n-footer-tree">
                         <div class="n-footer-brand-tree">
                             <a class="mb-0 text-decoration-none" href="./cart.html"><i class="bi bi-bag-heart-fill"></i> Carrito</a>
                         </div>

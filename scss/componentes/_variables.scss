@@ -1,0 +1,36 @@
+.flexCentral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexCentralDirection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.maxMedidas {
+    width: 100%;
+    height: 100%;
+}
+
+// Colores
+$bgGradient: linear-gradient(-135deg, #2D033B, #7f1d7f);
+$bg: #7f1d7f;
+$white: #fff;
+$rosa-claro: #fdf7fd;
+$negro-azul: #212529;
+$rosa-fuerte: #ff568c;
+$morado: #2D033B;
+$rating: #ff8500;
+$shadow: #2d033b80;
+$morado-claro: #4c105c;
+
+//Fonts
+$espaciado: 1px;
+
+//Borders
+$bordermd: 5px;
+$borderxs: 3px;

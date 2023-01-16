@@ -1,19 +1,22 @@
 .sectionGallery {
     & .container-fluid {
-        padding: 10px;
+        @extend .flexCentral;
+        padding: 10px 5px;
         & .fila {
             width: 100%;
+
             & .columna {
-                padding: 10px;
+                padding: 5px 5px;
+                
                 & .card {
-                    background: #fdf7fd;
+                    background: $rosa-claro;
                     border: none;
+                    height: 100%;
 
                     &-img-top {
                         padding: 16px 28px;
                         transition: transform .2s;
-                        width: 100%;
-                        height: 100%;
+                        @extend .maxMedidas;
                     }
 
                     &-img-top:hover {
@@ -25,17 +28,72 @@
                             font-size: 20px;
                             font-weight: bold;
                             letter-spacing: 1px;
-                            color: #212529;
+                            color: $negro-azul;
 
                             & .bi {
-                                color: #ff568c;
+                                color: $rosa-fuerte;
                             }
                         }
 
                         & .card-text {
                             text-align: justify;
                             font-size: 16px;
-                            color: #212529;
+                            color: $negro-azul;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .sectionGallery {
+        & .container-fluid {
+            padding: 5px;
+
+            & .fila {
+                & .columna {
+                    padding: 5px;
+                    & .card {    
+                        &-img-top {
+                            padding: 19px 33px;
+                        }
+    
+                        &-body {
+                            & .card-title {
+                                font-size: 18px;
+                            }
+    
+                            & .card-text {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .sectionGallery {
+        & .container-fluid {
+            & .fila {
+                & .columna {
+                    & .card {    
+                        &-img-top {
+                            padding: 12px 23px;
+                        }
+    
+                        &-body {
+                            & .card-title {
+                                font-size: 15px;
+                            }
+    
+                            & .card-text {
+                                font-size: 12px;
+                            }
                         }
                     }
                 }

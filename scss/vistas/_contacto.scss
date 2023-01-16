@@ -1,14 +1,11 @@
 .sectionContact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    //min-height: 80vh;
+    @extend .flexCentral;
 
     & .container {
         width: 100%;
         display: flex;
         justify-content: center;
-        padding: 30px 0;
+        padding: 41px 0;
 
         & .row {
             width: 65%;
@@ -17,8 +14,8 @@
 
             & .infoForm {
                 padding: 30px 20px;
-                background: #fff;
-                box-shadow: 0 10px 10px #2d033b80;
+                background: $white;
+                box-shadow: 0 10px 10px $shadow;
 
                 & .contactForm {
                     position: relative;
@@ -26,7 +23,7 @@
                     width: 100%;
 
                     & h2 {
-                        color: #2D033B;
+                        color: $morado;
                         font-size: 24px;
                         font-weight: bold;
                         text-align: center;
@@ -54,9 +51,9 @@
                             padding: 5px 0;
                             resize: none;
                             font-size: 18px;
-                            color: #4c105c;
+                            color: $morado-claro;
                             border: none;
-                            border-bottom: 1px solid #2D033B;
+                            border-bottom: 1px solid $morado;
                             outline: none !important;
                         }  
 
@@ -69,7 +66,7 @@
                             padding: 5px 0;
                             font-size: 18px;
                             font-weight: bold;
-                            color: #4c105c;
+                            color: $morado-claro;
                             transition: 0.5s;
                             pointer-events: none;
                         }
@@ -81,26 +78,25 @@
                             transform: translateY(-20px);
                             font-size: 12px;
                             font-weight: bold;
-                            letter-spacing: 1px;
-                            color: #ff568c;
+                            letter-spacing: $espaciado;
+                            color: $rosa-fuerte;
                         }
                         
                         & input[type="submit"],
                         & input[type="reset"] {
                             position: relative;
-                            //cursor: pointer;
-                            background: #7f1d7f;
-                            color: #fff;
+                            background: $bg;
+                            color: $white;
                             border: none;
                             max-width: 48%;
                             padding: 10px;
-                            border-radius: 3px;
+                            border-radius: $borderxs;
                             transition: transform 0.5s;
                         }
 
                         & input[type="submit"]:hover,
                         & input[type="reset"]:hover {
-                            background: #ff568c;
+                            background: $rosa-fuerte;
                             transform: scale(1.1);
                         }
                     }
@@ -108,14 +104,12 @@
             }
 
             & .infoContact  {
-                //height: 500px;
-                background: #7f1d7f;
+                background: $bg;
                 padding: 40px;
-                //display: inline-block;
-                box-shadow: 0 10px 10px #2d033b80;
+                box-shadow: 0 10px 10px $shadow;
 
                 & h2 {
-                    color: #fff;
+                    color: $white;
                     font-size: 24px;
                     font-weight: bold;
                     margin: 0;
@@ -126,8 +120,6 @@
                     padding: 0;
 
                     & li {
-                        //position: relative;
-                        //list-style: none;
                         display: flex;
                         margin: 20px 0;
                         cursor: pointer;
@@ -146,7 +138,7 @@
                         }
 
                         & span:nth-child(2) {
-                            color: #fff;
+                            color: $white;
                             margin-left: 10px;
                         }
                     }
@@ -165,7 +157,7 @@
                             text-decoration: none;
 
                             & i {
-                                color: #fff;
+                                color: $white;
                                 opacity: 0.5;
                             }
                         }
@@ -184,10 +176,146 @@
     }
 }
 
-@media only screen and (max-width:600px) {
-    .container {
-        width: 100%;
-        left: 50%;
-        top: 90px;
+@media only screen and (max-width:1200px) {
+    .sectionContact {    
+        & .container {
+            padding: 28px 0;
+    
+            & .row {
+                width: 80%;
+    
+                & .infoForm {    
+                    & .contactForm {      
+                        & .inputBox {
+                            padding-top: 10px;
+                        }
+                    }
+                }
+    
+                & .infoContact  {    
+                    & h2 {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .sectionContact {    
+        & .container {
+            padding: 52px 0;
+    
+            & .row {
+                width: 90%;
+    
+                & .infoForm {    
+                    & .contactForm {    
+                        & h2 {
+                            font-size: 22px;
+                        }
+    
+                        & .inputBox {
+                            padding-top: 5px;
+    
+                            & input, & textarea {
+                                font-size: 15px;
+                            }  
+    
+                            & span {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+    
+                & .infoContact  {    
+                    & h2 {
+                        font-size: 22px;
+                    }
+    
+                    & .info {
+    
+                        & li {
+    
+                            & span {
+                                font-size: 15px;
+    
+                                & i {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+    
+                    & .sci {    
+                        & li {
+                            margin: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .sectionContact {    
+        & .container {
+            padding: 10px 0;
+    
+            & .row {
+                width: 95%;
+    
+                & .infoForm {    
+                    & .contactForm {    
+                        & h2 {
+                            font-size: 20px;
+                        }
+    
+                        & .inputBox {    
+                            & input, & textarea {
+                                font-size: 13px;
+                            }  
+    
+                            & span {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+    
+                & .infoContact  {    
+                    & h2 {
+                        font-size: 20px;
+                    }
+    
+                    & .info {
+    
+                        & li {
+    
+                            & span {
+                                font-size: 13px;
+    
+                                & i {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .sectionContact {    
+        & .container {
+            & .row {
+                width: 98%;
+            }
+        }
     }
 }
